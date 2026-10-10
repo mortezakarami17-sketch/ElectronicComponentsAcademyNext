@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="گالری مستقل بررسی تصاویر واقعی، نماهای داخلی و مرجع نمادهای شماتیک قطعات مقاومتی">
+  <title>گالری بازبینی تصاویر قطعات مقاومتی</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./gallery.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Electronic Components Academy Next</p>
+      <h1>گالری بازبینی تصاویر و نمادها</h1>
+      <p class="intro">این صفحه فقط برای مقایسه و تصمیم‌گیری است. هیچ گزینه‌ای در درس‌ها جایگزین یا تأییدشده محسوب نمی‌شود.</p>
+      <div class="notice" role="note"><strong>نکته:</strong> تصاویر فعلی با برچسب «دارایی موجود؛ بدون تغییر» مشخص‌اند. عکس، نمای برش‌خورده و نماد شماتیک از هم جدا شده‌اند. برخی نامزدهای بیرونی برای نمایش به اینترنت نیاز دارند.</div>
+      <div class="toolbar">
+        <label for="search">جست‌وجو در قطعات</label>
+        <input id="search" type="search" placeholder="نام فارسی یا انگلیسی…" autocomplete="off">
+        <span id="result-count" class="result-count" aria-live="polite"></span>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div id="gallery" class="component-grid" aria-label="قطعات بررسی‌شده"></div>
+    <p id="empty-state" class="empty-state" hidden>موردی با این عبارت پیدا نشد.</p>
+  </main>
+  <dialog id="image-dialog" aria-label="نمای بزرگ تصویر">
+    <form method="dialog"><button class="close" aria-label="بستن پنجره">بستن ×</button></form>
+    <img id="dialog-image" alt="">
+    <p id="dialog-caption"></p>
+  </dialog>
+  <footer class="wrap footer">
+    <p>این گالری مستقل است و داده‌های درس یا دارایی‌های تأییدشدهٔ برنامه را تغییر نمی‌دهد.</p>
+    <p>فهرست فنی نمادها و اعتبار تصاویر: <a href="./SOURCES.md">SOURCES.md</a></p>
+  </footer>
+</body>
+</html>

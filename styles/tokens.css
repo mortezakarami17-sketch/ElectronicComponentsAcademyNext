@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light;
+  --color-ink: #182d40;
+  --color-ink-soft: #516578;
+  --color-muted: #758697;
+  --color-paper: #f5f8fa;
+  --color-surface: #ffffff;
+  --color-line: #e1e9ee;
+  --color-navy: #10233b;
+  --color-navy-light: #173b53;
+  --color-teal: #27b8a5;
+  --color-teal-dark: #168d82;
+  --color-teal-pale: #e8f7f4;
+  --color-amber: #edb35e;
+  --color-disabled: #8b98a4;
+  --shadow-card: 0 16px 42px rgb(21 49 69 / 7%);
+  --shadow-floating: 0 24px 70px rgb(5 18 31 / 30%);
+  --radius-small: 12px;
+  --radius-medium: 20px;
+  --radius-large: 30px;
+  --content-width: 1160px;
+  --page-gutter: clamp(20px, 6vw, 88px);
+  --font-sans: Tahoma, "Segoe UI", sans-serif;
+}

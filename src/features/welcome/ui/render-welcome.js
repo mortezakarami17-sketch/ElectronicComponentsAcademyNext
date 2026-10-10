@@ -17,8 +17,11 @@ export function renderWelcome(container, content, onEnter) {
 
   const logoSlot = document.createElement("span");
   logoSlot.className = "logo-slot logo-slot--welcome";
-  logoSlot.setAttribute("role", "img");
-  logoSlot.setAttribute("aria-label", content.logoLabel);
+  const logo = document.createElement("img");
+  logo.className = "logo-image";
+  logo.src = "./assets/images/branding/moallemkhoob-logo.png";
+  logo.alt = "نشان رسمی معلم خوب";
+  logoSlot.append(logo);
 
   const eyebrow = textElement("p", "eyebrow", content.eyebrow);
   const title = textElement("h2", "", content.title);

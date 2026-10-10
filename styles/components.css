@@ -7,6 +7,13 @@
   background: rgb(255 255 255 / 9%);
 }
 
+.logo-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .logo-slot--small {
   width: 43px;
   height: 43px;
